@@ -1,3 +1,5 @@
+
+
 public class TaskCLI {
     public static void main(String[] args) {
 
@@ -15,7 +17,7 @@ public class TaskCLI {
                     return;
                 }
                 TaskHandler.addTask(args[1]);
-                System.out.println("Task was added. (ID: "+TaskHandler.getID()+")");
+                System.out.println("Task was added. (ID: "+TaskData.getID()+")");
                 break;
 
             case "update":
@@ -24,7 +26,7 @@ public class TaskCLI {
                     return;
                 }
                 TaskHandler.updateTask(args[2]);
-                System.out.println("Task was updated. (ID: "+TaskHandler.getID()+", description: "+TaskHandler.getDesc()+")");
+                System.out.println("Task was updated. (ID: "+TaskData.getID()+", description: "+TaskData.getDesc()+")");
                 break;
 
             case "delete":
@@ -33,7 +35,7 @@ public class TaskCLI {
                     return;
                 }
                 TaskHandler.deleteTask(args[2]);
-                System.out.println("Task was deleted. (ID: "+TaskHandler.getID()+")");
+                System.out.println("Task was deleted. (ID: "+TaskData.getID()+")");
                 break;
 
             case "mark-in-progress":

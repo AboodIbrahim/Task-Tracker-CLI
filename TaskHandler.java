@@ -1,15 +1,27 @@
+import java.io.File;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+
 public class TaskHandler {
 
+    private List<TaskData> tasks;
+    private final Path FilePath = Path.of("tasks.josn");
 
+    public TaskHandler(){
+        this.tasks = loadTasks();
+    }
+
+    private List<TaskData> loadTasks(){
+
+
+
+        return tasks;
+    }
 
     public static void addTask(String arg) {
     }
 
-    public static String getID() {
-    }
-
-    public static String getDesc() {
-    }
 
     public static void updateTask(String arg) {
     }

@@ -16,6 +16,13 @@ public class TaskData {
         this.status= Status.TODO;
     }
 
+    public int getID() {
+        return this.id;
+    }
+
+    public String getDesc(){
+        return this.description;
+    }
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
